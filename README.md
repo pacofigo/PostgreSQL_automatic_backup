@@ -5,7 +5,7 @@
 <br>
 ## Generate the backup locally
 ### Preparation of the necessary local files
-1. Copy the `.pgpass` file to the home of the user who will run the backups. Remember to put in this file the host, port, database name, username and password of the PostgreSQL user with the necessary permissions to execute the backup.
+1. Copy the `.pgpass` file to the home of the user who will run the backups. Remember to put in this file the host, port, database name, username and password of the PostgreSQL user with 600 permissions.
 2. Copy the `local_backup.sh` file to the home of the user. Remember to write correctly the routes that you want your backups to have.
 3. Give the execute permission to the file `local_backup.sh` with the following command: `chmod +x local_backup.sh`
 ### Automatic local backup scheduling
